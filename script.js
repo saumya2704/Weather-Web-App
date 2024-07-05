@@ -14,7 +14,7 @@ let w_pressure = document.querySelector('.weather_pressure');
 let citySearch = document.querySelector('.weather_search')
 
 let city = "Ahmedabad";
-const apiKey = '17a5b0feb55fca25e46671240e045669';
+const apiKey = OPENWEATHERMAP_API_KEY ;
 
 citySearch.addEventListener('submit', (e) => {
     e.preventDefault();
