@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="container">
+        <!-- Input field search -->
+        <div class="weather_header">
+            <form class="weather_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            
+                <input type="text" class="city_name" placeholder="Search your city...">
+            </form>
+        </div>
+        <!-- Main Body : Main weather data -->
+        <div class="weather_body">
+            <h1 class="weather_city"></h1>
+            <p class="weather_date_time"></p>
+            <div class="weather_data">
+                <p class="weather_forecast"></p>
+                <div class="weather_icon"></div>
+                <p class="weather_temperature"></p>
+                <div class="weather_minmax">
+                    <p class="weather_min"></p>
+                    <p class="weather_max"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Weather extra data -->
+        <section class="weather_info">
+
+            <!-- Temperature -->
+            <div class="weather_card">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div>
+                    <p>Feels like</p>
+                    <p class="weather_feelsLike">15&#176</p>
+                </div>
+            </div>
+
+            <!-- Humidity -->
+            <div class="weather_card">
+                <i>
+                    <img src="images\2682807_drop_high_humidity_percentage_precipitation_icon.png" alt="humidity" width="20px">
+                </i>
+                <div>
+                    <p>Feels like</p>
+                    <p class="weather_humidity">15&#176</p>
+                </div>
+            </div>
+
+            <!-- Wind -->
+            <div class="weather_card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Feels like</p>
+                    <p class="weather_wind">15&#176</p>
+                </div>
+            </div>
+
+            <!-- Pressure -->
+            <div class="weather_card">
+                <i>
+                    <img src="images\resilience.png" alt="pressure" width="20px">
+                </i>
+                <div>
+                    <p>Feels like</p>
+                    <p class="weather_pressure">15&#176</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
